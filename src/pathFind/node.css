@@ -1,0 +1,25 @@
+.node{
+    width: 25px;
+    height: 25px;
+    outline: 1px solid rgb(175, 216, 248);
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.node-start{
+    background-color: cyan;
+}
+.node-goal{
+    background-color:indigo;
+}
+.node-visited{
+    background-color: lightgreen;
+}
+
+.node-path{
+    background-color: yellow;
+}
+
+.node-wall{
+    background-color: brown;
+}
