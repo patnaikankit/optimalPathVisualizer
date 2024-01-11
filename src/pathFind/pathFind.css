@@ -1,0 +1,20 @@
+.grid{
+    margin: 20px 0 0;
+    white-space: nowrap ;
+}
+
+.square{
+    width: 18px;
+    height: 18px;
+    outline: 1px solid rgb(175, 216, 248);
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.n-start{
+    background-color: cyan;
+}
+
+.n-goal{
+    background-color: indigo;
+}
