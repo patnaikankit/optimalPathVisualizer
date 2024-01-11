@@ -4,9 +4,9 @@ import PathFind from './pathFind/pathFind'
 function App() {
   return (
     <>
-      <div className="App">
+      <div className="App-white">
         <div className=''>Optimalpath Visualizer</div>
-        <PathFind />
+        <PathFind/>
       </div>
     </>
   )

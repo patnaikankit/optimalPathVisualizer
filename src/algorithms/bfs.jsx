@@ -7,9 +7,11 @@ export const bfs = (board, start, goal) => {
         if(curNode === undefined){
             return 0;
         }
+
         if(curNode === goal){
             return vis;
         }
+        
         if(!curNode.isWall && (!curNode.isvis||curNode.isStart)){
             curNode.isvis = true;
             vis.push(curNode);
@@ -24,6 +26,7 @@ export const bfs = (board, start, goal) => {
                     nextNode.parent = curNode;
                 }
             }
+
             if(col > 0){
                 nextNode = board[row][col - 1];
                 if(!nextNode.isvis){
@@ -31,6 +34,7 @@ export const bfs = (board, start, goal) => {
                     nextNode.parent = curNode;
                 }
             }
+
             if(row < board.length - 1){
                 nextNode = board[row + 1][col];
                 if(!nextNode.isvis){
@@ -38,6 +42,7 @@ export const bfs = (board, start, goal) => {
                     nextNode.parent = curNode;
                 }
             }
+            
             if(col < board[0].length - 1){
                 nextNode = board[row][col + 1];
                 if(!nextNode.isvis){

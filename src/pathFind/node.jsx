@@ -1,3 +1,4 @@
+//  rendering grid nodes with dynamic styling based on their properties and handling mouse events.
 import './node.css'
 import React, { Component } from 'react'
 
