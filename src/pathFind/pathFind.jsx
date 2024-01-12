@@ -168,7 +168,7 @@ export default class PathFind extends Component{
         }   
     }
     
-    
+    // start checking all possible paths from start node
     visualise(visited, path){
         for(var i = 0; i <= visited.length; i++){
             this.setState({numOfExpandedNodes: visited.length, numOfPathNodes: path.length + 1});
@@ -325,9 +325,7 @@ export default class PathFind extends Component{
                 };
             }
             newBoard[row][col] = newNode;
-        }
-
-        
+        } 
         return newBoard;
     }
 
